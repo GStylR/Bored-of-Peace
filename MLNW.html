@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>$MLNW — Bored of Peace | Solana Meme Coin</title>
+<meta name="description" content="$MLNW is a satire-driven Solana meme coin launched on Pump.fun. No promises. Just memes."/>
+
+<style>
+:root{
+  --bg:#0a0f1f;
+  --text:#f1f4ff;
+  --muted:#9aa7ff;
+  --accent:#14f195;
+  --accent2:#9945ff;
+  --border:rgba(255,255,255,.08);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(153,69,255,.25), transparent 40%),
+    radial-gradient(circle at 10% 0%, rgba(20,241,149,.25), transparent 40%),
+    var(--bg);
+  color:var(--text);
+}
+.container{max-width:1100px;margin:auto;padding:24px}
+h1{font-size:52px;margin:10px 0}
+h2{margin-bottom:8px}
+p{color:var(--muted)}
+a{text-decoration:none;color:inherit}
+
+.btn{
+  padding:12px 18px;
+  border-radius:14px;
+  font-weight:800;
+  display:inline-block;
+  margin:8px 8px 0 0;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#000;
+}
+
+.card{
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border);
+  padding:24px;
+  border-radius:var(--radius);
+  margin-bottom:24px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+
+.mono{
+  font-family:monospace;
+  font-size:13px;
+  word-break:break-all;
+}
+
+.copy-btn{
+  margin-top:8px;
+  padding:8px 12px;
+  border-radius:10px;
+  background:rgba(255,255,255,.08);
+  border:1px solid var(--border);
+  cursor:pointer;
+  font-weight:700;
+}
+
+footer{
+  margin-top:50px;
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  font-size:14px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="card">
+    <h1>$MLNW</h1>
+    <h2>Bored of Peace — Loud on Solana</h2>
+    <p>
+      $MLNW is a satire-first meme coin launched on <strong>Solana</strong> via Pump.fun.
+      No roadmap delusions. No fake promises. Just cultural chaos and community memes.
+    </p>
+
+    <a href="https://join.pump.fun/HSag/zmirdm4a"
+       class="btn primary"
+       target="_blank">
+       Buy on Pump.fun
+    </a>
+  </div>
+
+  <!-- TOKEN INFO -->
+  <div class="grid">
+
+    <div class="card">
+      <h2>Token Details</h2>
+      <p><strong>Chain:</strong> Solana</p>
+      <p><strong>Ticker:</strong> $MLNW</p>
+      <p><strong>Launch Platform:</strong> Pump.fun</p>
+
+      <p><strong>Contract Address:</strong></p>
+      <div class="mono" id="contract">
+        2R3ygb6NDF5NTG8hoip2Qipe94MezGrKjkxRzuZCpump
+      </div>
+      <button class="copy-btn" onclick="copyCA()">Copy Address</button>
+    </div>
+
+    <div class="card">
+      <h2>What is $MLNW?</h2>
+      <p>
+        $MLNW is a digital meme experiment built around exaggerated satire.
+        It does not represent any real political movement, organization,
+        or endorsement of real-world conflict.
+      </p>
+      <p>
+        The brand exists purely as online culture and entertainment.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- HOW TO BUY -->
+  <div class="card">
+    <h2>How to Buy $MLNW</h2>
+
+    <ol style="color:var(--muted)">
+      <li>Install Phantom (or any Solana wallet).</li>
+      <li>Fund your wallet with SOL.</li>
+      <li>Go to Pump.fun.</li>
+      <li>Search $MLNW or paste the contract address.</li>
+      <li>Swap SOL → $MLNW.</li>
+    </ol>
+
+    <a href="https://join.pump.fun/HSag/zmirdm4a"
+       class="btn"
+       target="_blank">
+       Open Pump.fun
+    </a>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="card">
+    <h2>Disclaimer</h2>
+    <p>
+      $MLNW is a meme token created for entertainment purposes.
+      It has no intrinsic value, no guaranteed utility,
+      and no expectation of financial return.
+    </p>
+    <p>
+      Cryptocurrency markets are volatile and high risk.
+      Only participate with funds you can afford to lose.
+    </p>
+  </div>
+
+  <footer>
+    © 2026 $MLNW — Bored of Peace  
+    <br>
+    Not affiliated with any government, institution, or political figure.
+  </footer>
+
+</div>
+
+<script>
+function copyCA(){
+  const text = document.getElementById("contract").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Contract address copied!");
+}
+</script>
+
+</body>
+</html>
